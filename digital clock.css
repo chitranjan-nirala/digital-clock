@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'alarm clock', sans-serif;
+                                                
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: rgb(5, 5, 5);
+   
+}
+#time{
+    display: flex;
+    gap: 1px;
+padding: 30px;
+background-color: rgb(49, 55, 53);
+ color: rgba(233, 233, 241, 0.882);
+border-radius: 20px;
+font-size: 20px;
+}
+#time .circle{
+    position: relative;
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+#time .circle svg circle{
+    width: 150px;
+    height: 150px;
+ fill: rgb(54, 63, 59);
+    stroke: rgb(39, 247, 11);
+    stroke-width: 5px;
+    transform: translate(5px,5px);
+}
+#time .circle svg circle:nth-child(2)
+{ 
+    stroke: var(--clr);
+    stroke-dasharray:50;
+}
+#time div
+{
+    position:absolute;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 1.4em;
+}
+#time .ap{
+    position:relative;
+ font-size: 20px;
+    transform: translateX(-18px);
+}
